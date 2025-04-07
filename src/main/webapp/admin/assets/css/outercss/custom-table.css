@@ -1,0 +1,152 @@
+/* table css start */
+table {
+	border-collapse: collapse
+}
+
+.table {
+	width: 100%;
+	margin-bottom: 1rem;
+	color: #8e9eb1
+}
+
+.table td, .table th {
+	padding: .75rem;
+	vertical-align: top;
+	border-top: 1px solid #ccd3dc
+}
+
+.table thead th {
+	vertical-align: bottom;
+	border-bottom: 2px solid #ccd3dc
+}
+
+.table tbody+tbody {
+	border-top: 2px solid #ccd3dc
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+	background-color: rgba(0, 0, 0, .05)
+}
+
+.table-hover tbody tr:hover {
+	color: #8e9eb1;
+	background-color: rgba(0, 0, 0, .075)
+}
+
+.table-active, .table-active>td, .table-active>th, .table-hover .table-active:hover,
+	.table-hover .table-active:hover>td, .table-hover .table-active:hover>th
+	{
+	background-color: rgba(0, 0, 0, .075)
+}
+
+.table-responsive {
+	display: block;
+	width: 100%;
+	overflow-x: auto;
+	-webkit-overflow-scrolling: touch;
+	margin-bottom: 20px;
+	border-radius: 10px;
+	max-height: 350px;
+    overflow-y: auto;
+    border-bottom: 1px solid #c9c9c9 !important;
+}
+
+.table-responsive>.table-bordered {
+	border: 0
+}
+
+.table {
+	/* border: 1px solid rgba(57, 59, 135, .4); */
+	/*  overflow: hidden; */
+	color: #323b50;
+	/*   background-color:#fff; */
+	margin-bottom: 0px;
+	-ms-box-shadow: 0 16px 40px 0 rgba(0, 0, 0, .0392157);
+	-o-box-shadow: 0 16px 40px 0 rgba(0, 0, 0, .0392157);
+	box-shadow: 0 16px 40px 0 rgba(0, 0, 0, .0392157)
+}
+
+.table p, .table span {
+	color: #8e9eb1
+}
+
+.table td {
+	padding: 6px 4px;
+	border-top: 0;
+	border-bottom: 1px solid #ccd3dc
+}
+
+.basic-table thead th {
+	border: none;
+/* 	background: #7a6ad8; */
+	    background-color: var(--primary-color);
+	color: #fff;
+	text-align: left;
+	padding: .65rem 1.875rem
+}
+.basic-table thead{
+	position: sticky;
+    z-index: 2;
+    top: 0;
+}
+
+
+.basic-table thead th span {
+	font-family: "DM Sans, sans-serif";
+	font-weight: 500;
+	margin: 0;
+	line-height: 1.5;
+	color: #fff;
+	font-size: 1.2rem
+}
+
+.basic-table td, .basic-table th {
+	border: none
+}
+
+.table td, .table th {
+	vertical-align: middle
+}
+
+.basic-table, .basic-table th, .basic-table td {
+	/* border: 1px solid #c9c9c9 !important; */
+	border-collapse: collapse;
+}
+
+.table-block-sm {
+	max-width: 76px;
+	width: 76px;
+}
+
+.basic-table thead th {
+	padding: 0.8rem;
+	text-align: center;
+	font-size: 18px;
+}
+.basic-table td{
+	padding: 0.8rem;
+	text-align: center;
+	font-size: 16px;
+}
+.basic-table td a:hover{
+	color: black;
+}
+
+.basic-table .form-group {
+	margin-bottom: 0px;
+}
+
+.table.basic-table {
+	border-radius: 10px;
+}
+
+.custom-table-title{
+	color: #323232;
+/*     margin: 40px 0px 10px 0px; */
+	margin: 80px 0px 10px 0px;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+
+/* table css start */

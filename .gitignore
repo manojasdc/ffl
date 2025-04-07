@@ -1,0 +1,68 @@
+# Maven or Gradle build directories
+/target/
+build/
+
+# IntelliJ IDEA files
+/.idea/
+/*.iml
+*.ipr
+*.iws
+
+# Eclipse files
+/.settings/
+/.project
+/.classpath
+
+# NetBeans files
+/nbproject/
+/nbproject/private/
+/build/
+
+# VS Code settings
+/.vscode/
+
+# MacOS files
+.DS_Store
+
+# Windows files
+Thumbs.db
+ehthumbs.db
+
+# Log files
+*.log
+/logs/
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*.swo
+*.orig
+
+# Environment variable files
+.env
+.env.*
+
+# Test coverage reports
+/coverage/
+*.lcov
+
+# Dependency directories
+/.mvn/
+*.jar
+*.war
+*.ear
+
+# Package manager files
+node_modules/
+npm-debug.log
+yarn-error.log
+.pnp.cjs
+.pnp.loader.mjs
+
+# Operating system files
+*.~undo-tree~
+*.~undo~
+*.rej
+*~.nib
+

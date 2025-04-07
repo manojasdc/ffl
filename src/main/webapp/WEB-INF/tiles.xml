@@ -1,0 +1,1463 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+	<!-- ####Root layout template start#### -->
+	<definition name="base.Layout_rootfiles.definition"
+		template="/WEB-INF/pages/Layout_rootfiles/rootlayout.jsp">
+		<!-- header code start -->
+		<put-attribute name="header"
+			value="/WEB-INF/pages/Layout_rootfiles/header.jsp" />
+		<put-attribute name="header2"
+			value="/WEB-INF/pages/Layout_rootfiles/header2.jsp" />
+		<!-- header code end -->
+		<put-attribute name="body" value="" />
+		<!-- footer code start -->
+		<put-attribute name="footer"
+			value="/WEB-INF/pages/Layout_rootfiles/footer.jsp" />
+		<put-attribute name="footer2"
+			value="/WEB-INF/pages/Layout_rootfiles/footer2.jsp" />
+		<!-- footer code end -->
+	</definition>
+	<!-- ####Root layout template end#### -->
+
+	<!-- ####Root layout template start#### -->
+	<definition name="base.Layout_rootfiles2.definition"
+		template="/WEB-INF/pages/Layout_rootfiles/rootlayout2.jsp">
+		<!-- header code start -->
+			<put-attribute name="header2" value="/WEB-INF/pages/Layout_rootfiles/header2.jsp" />
+		<!-- header code end -->
+		<put-attribute name="body" value="" />
+		<!-- footer code start -->
+		<put-attribute name="footer2" value="/WEB-INF/pages/Layout_rootfiles/footer2.jsp" />
+		<!-- footer code end -->
+	</definition>
+	<!-- ####Root layout template end#### -->
+	
+		<definition name="index" extends="base.Layout_rootfiles2.definition">
+		<put-attribute name="title" value="common2" />
+		<put-attribute name="body" value="/WEB-INF/pages/login/index.jsp" />
+	    </definition>
+	
+	<definition name="screen_reader" extends="base.Layout_rootfiles2.definition">
+		<put-attribute name="title" value="common2" />
+		<put-attribute name="body" value="/WEB-INF/pages/login/screen_reader.jsp" />
+	</definition>
+
+	<definition name="base.admin.definition"
+		template="/WEB-INF/pages/admin/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="menu"
+			value="/WEB-INF/pages/admin/menu.jsp" />
+		<put-attribute name="header"
+			value="/WEB-INF/pages/admin/header.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer"
+			value="/WEB-INF/pages/admin/footer.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+
+
+	<!-- dashboard Page tiles start -->
+	<definition name="dashboard_page"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Dashboard/dashboard_page.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+	<!-- dashboard Page tiles end -->
+
+	<!-- outer pages tiles start -->
+	<definition name="reg_page"
+		extends="base.Layout_rootfiles.definition">
+		<put-attribute name="title" value="common" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/login/reg_page.jsp" />
+	</definition>
+
+	<definition name="signin"
+		extends="base.Layout_rootfiles.definition">
+		<put-attribute name="title" value="common" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/login/signin.jsp" />
+	</definition>
+
+	<definition name="aim"
+		extends="base.Layout_rootfiles.definition">
+		<put-attribute name="title" value="common" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/login/aim.jsp" />
+	</definition>
+
+	<definition name="CATA"
+		extends="base.Layout_rootfiles.definition">
+		<put-attribute name="title" value="common" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/login/Institute.jsp" />
+	</definition>
+
+	<definition name="function"
+		extends="base.Layout_rootfiles.definition">
+		<put-attribute name="title" value="common" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/login/function.jsp" />
+	</definition>
+
+	<definition name="objective"
+		extends="base.Layout_rootfiles.definition">
+		<put-attribute name="title" value="common" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/login/objective.jsp" />
+	</definition>
+
+	<definition name="bog"
+		extends="base.Layout_rootfiles.definition">
+		<put-attribute name="title" value="common" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/login/bog.jsp" />
+	</definition>
+
+	<definition name="contactus"
+		extends="base.Layout_rootfiles.definition">
+		<put-attribute name="title" value="common" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/login/contactus.jsp" />
+	</definition>
+	
+	
+	<definition name="photogallery"
+		extends="base.Layout_rootfiles.definition">
+		<put-attribute name="title" value="common" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/login/photo_gallery.jsp" />
+	</definition>
+
+	<definition name="iaf_edu_wac"
+		extends="base.Layout_rootfiles.definition">
+		<put-attribute name="title" value="common" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/login/iaf_edu_wac.jsp" />
+	</definition>
+
+	<definition name="iaf_edu_swac"
+		extends="base.Layout_rootfiles.definition">
+		<put-attribute name="title" value="common" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/login/iaf_edu_swac.jsp" />
+	</definition>
+
+	<definition name="iaf_edu_eac"
+		extends="base.Layout_rootfiles.definition">
+		<put-attribute name="title" value="common" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/login/iaf_edu_eac.jsp" />
+	</definition>
+
+	<definition name="iaf_edu_cac"
+		extends="base.Layout_rootfiles.definition">
+		<put-attribute name="title" value="common" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/login/iaf_edu_cac.jsp" />
+	</definition>
+
+	<definition name="iaf_edu_sac"
+		extends="base.Layout_rootfiles.definition">
+		<put-attribute name="title" value="common" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/login/iaf_edu_sac.jsp" />
+	</definition>
+
+	<definition name="iaf_edu_mc"
+		extends="base.Layout_rootfiles.definition">
+		<put-attribute name="title" value="common" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/login/iaf_edu_mc.jsp" />
+	</definition>
+
+	<definition name="iaf_edu_tc"
+		extends="base.Layout_rootfiles.definition">
+		<put-attribute name="title" value="common" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/login/iaf_edu_tc.jsp" />
+	</definition>
+
+	<definition name="iaf_edu_tc"
+		extends="base.Layout_rootfiles.definition">
+		<put-attribute name="title" value="common" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/login/iaf_edu_tc.jsp" />
+	</definition>
+
+	<definition name="landing"
+		extends="base.Layout_rootfiles.definition">
+		<put-attribute name="title" value="common" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/login/landing.jsp" />
+	</definition>
+	
+	
+	
+
+	<definition name="login"
+		extends="base.Layout_rootfiles.definition">
+		<put-attribute name="title" value="common" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/login/login.jsp" />
+	</definition>
+
+
+
+	<!-- outer pages tiles end -->
+
+
+
+	<definition name="base.student.definition"
+		template="/WEB-INF/pages/admin/layoutstudent.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="menu"
+			value="/WEB-INF/pages/admin/menu.jsp" />
+		<put-attribute name="header"
+			value="/WEB-INF/pages/admin/header.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer"
+			value="/WEB-INF/pages/admin/footer.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+
+	<definition name="commanDashboardTiles"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Dashboard/commonDashboard.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+
+
+
+	<definition name="DocumentMaster"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Dashboard/DocumentMaster.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+
+
+
+	<definition name="registration"
+		extends="base.student.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Dashboard/registration.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+
+
+
+	<definition name="ChangePasswordadmin"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Dashboard/ChangePasswordadmin.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+	<definition name="ChangePasswordstudent"
+		extends="base.student.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Dashboard/ChangePassword.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+
+
+	<definition name="RegistrationDate"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Dashboard/RegistrationDate.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+
+
+
+
+	<definition name="exampleTiles"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/admin/example.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+
+	<definition name="myProfileTiles"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/MY_ACCOUNT/my_profile.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+	<definition name="changePasswordTile"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/MY_ACCOUNT/changepassword.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+	<definition name="handingTakingOverTiles"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/MY_ACCOUNT/handingTakingOver.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+
+	<!-- Start Dynamic Menu -->
+
+
+	<definition name="user_mstTiles"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/RBAC/user_mst.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+	
+	
+	<definition name="addphoto"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body" value="/WEB-INF/pages/Dashboard/add_photo.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+
+	<definition name="uploadImage"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body" value="/WEB-INF/pages/Dashboard/upload_image.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+
+	<definition name="roleTiles" extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/RBAC/roleMstnew.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+	<definition name="AccessTiles"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/error/Access.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+	<definition name="Edit_user_mstTiles"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/RBAC/edit_user_mst.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+	<definition name="user_statusTiles"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/RBAC/user_status.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+
+	<definition name="status_of_inactive_user_reportTiles"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/RBAC/status_of_inactive_user_report.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+
+	<definition name="search_user_mstTiles"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/RBAC/search_user_mst.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+	<!--End Dynamic Menu -->
+
+	<!-- Strat Error Pages -->
+	<definition name="400" extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/error/400.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+	<definition name="404" extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/error/404.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+	<definition name="405" extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/error/405.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+	<definition name="500" extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/error/500.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+	<definition name="505" extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/error/505.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+	<!-- End Error Pages -->
+
+	<!-- start Dashboard Tile -->
+
+
+	<definition name="superDashboardTiles"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Dashboard/super_Dashboard.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+	<!-- end Dashboard tiles -->
+
+	<!-- help desk -->
+	<definition name="HelpDashTiles"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Dashboard/helpDeskDash/HelpDash.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+	<definition name="helpTiles" extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/helpDesk/help.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+	<definition name="myticketTiles"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/helpDesk/myticket.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+
+	<definition name="manageticketTiles"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/helpDesk/manageticket.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+
+	<definition name="user_managementTiles"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/helpDesk/user_management.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+	<definition name="faqinsertTiles"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/helpDesk/faqinsert.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+	<definition name="searchfaqTiles"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/helpDesk/searchfaq.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+	<definition name="faqTiles" extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/helpDesk/faq.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+	<definition name="Edit_faqTiles"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/helpDesk/Edit_faq.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+	<definition name="user_ticketTiles"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/helpDesk/user_ticket.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+	<definition name="viewticketTiles"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/helpDesk/view_ticket.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+
+	<definition name="marqueeTiles"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/login/marquee.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+	<definition name="UserCreatedTiles"
+		template="/WEB-INF/pages/Dashboard/helpDeskDash/UserCreated.jsp"></definition>
+	<definition name="RoleUrlTiles"
+		template="/WEB-INF/pages/Dashboard/helpDeskDash/RoleUrl.jsp"></definition>
+	<definition name="LoggedInUsersTiles"
+		template="/WEB-INF/pages/Dashboard/helpDeskDash/LoggedInUsers.jsp"></definition>
+	<definition name="TicketStatusNewTiles"
+		template="/WEB-INF/pages/Dashboard/helpDeskDash/TicketStatus.jsp"></definition>
+	<definition name="TicketStatusInProgressTiles"
+		template="/WEB-INF/pages/Dashboard/helpDeskDash/TicketStatus.jsp"></definition>
+	<definition name="TicketStatusCompletedTiles"
+		template="/WEB-INF/pages/Dashboard/helpDeskDash/TicketStatus.jsp"></definition>
+	<definition name="HelpTopicFeedbackTiles"
+		template="/WEB-INF/pages/Dashboard/helpDeskDash/HelpTopicStatus.jsp"></definition>
+	<definition name="HelpTopicFeatureRequestTiles"
+		template="/WEB-INF/pages/Dashboard/helpDeskDash/HelpTopicStatus.jsp"></definition>
+	<!-- help desk end -->
+
+
+	<!-- end master -->
+
+
+
+
+
+	<!-- db form tiles start -->
+	<definition name="db_form" extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Dashboard/db_form.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+	<!-- db form tiles end -->
+
+	<!-- db form tiles start -->
+	<definition name="db_form" extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Dashboard/db_form.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+	<!-- db form tiles end -->
+
+	<!-- Wizard tiles start -->
+	<definition name="Wizard" extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Dashboard/Wizard.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+	<!-- Wizard tiles end -->
+
+	<!-- Demo Page tiles start -->
+	<definition name="demo_page" extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Dashboard/demo_page.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+	<!-- Demo Page tiles end -->
+
+
+	<!-- SubCategory Page tiles end -->
+
+	<!-- FeesCategory Page tiles start -->
+	<!-- <definition name="FeesCategory" -->
+	<!-- extends="base.admin.definition"> -->
+	<!-- <put-attribute name="title" value="Admin Home" /> -->
+	<!-- <put-attribute name="body" -->
+	<!-- value="/WEB-INF/pages/Dashboard/FeesCategoryMaster.jsp" /> -->
+	<!-- <put-attribute name="menuselection" value="home" /> -->
+	<!-- </definition> -->
+	<!-- FeesCategory Page tiles end -->
+
+	<!-- Fees group and Fees Payment -->
+
+
+
+
+
+
+	<!-- Main master page for details ends -->
+
+
+
+	<definition name="user_mstTiles"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Dashboard/user_mst.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+
+	<definition name="SubjectMaster"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Dashboard/SubjectMaster.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+
+
+	<!-- commanDashboardTiles Page tiles start -->
+	<definition name="commanDashboardTiles"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Dashboard/commonDashboard.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+	<!-- commanDashboardTiles Page tiles end -->
+
+	<definition name="SocietyDashboard"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Dashboard/SocietyDashboard.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+	<definition name="StudentDashboard"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Dashboard/StudentDashboard.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+	<definition name="RODashboard"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Dashboard/RODashboard.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+
+	<definition name="SchoolDashboard"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Dashboard/SchoolDashboard.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+
+
+	<definition name="StudentDetailsReport"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Dashboard/student_details_report.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+
+	<definition name="Attendance"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Dashboard/Attendance.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+
+	<definition name="AttendanceHoliday"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Dashboard/AttendanceHoliday.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+
+	<definition name="AttendancePdfGenerate"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Dashboard/AttendancePdfGenerate.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+
+	<definition name="gallery"
+		extends="base.Layout_rootfiles.definition">
+		<put-attribute name="title" value="common" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/login/gallery.jsp" />
+	</definition>
+
+	<definition name="iaf_edu_airhq"
+		extends="base.Layout_rootfiles.definition">
+		<put-attribute name="title" value="common" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/login/iaf_edu_airhq.jsp" />
+	</definition>
+
+	<definition name="StudentMassPromotion"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Dashboard/studentmasspromotion.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+	<definition name="FacultySubjectMap"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Dashboard/facultysubjectmap.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+
+	<definition name="video_gallery"
+		extends="base.Layout_rootfiles.definition">
+		<put-attribute name="title" value="common" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/login/video_gallery.jsp" />
+	</definition>
+	<definition name="PhotoGallaryApprove"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Dashboard/photogallaryapprove.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+
+	<definition name="Thoughtoftheday"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Dashboard/ThoughtMaster.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+
+	<definition name="SocietyReportDashboard"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Dashboard/SocietyReportDashboard.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+
+
+	<definition name="RoReportDashboard"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Dashboard/RoReportDashboard.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+
+	<definition name="SchoolReportDashboard"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Dashboard/SchoolReportDashboard.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+
+	<definition name="photogallarymaster"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Dashboard/photogallarymaster.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+
+	<definition name="PhotoEventMaster"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Dashboard/PhotoEventMaster.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+
+	<definition name="SchoolReport"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Dashboard/SchoolReport.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+
+	<definition name="AddNotification"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Dashboard/AddNotification.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+
+
+	<definition name="viewnotification"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Dashboard/viewnotification.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+
+
+	<definition name="allnotification"
+		extends="base.Layout_rootfiles.definition">
+		<put-attribute name="title" value="common" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/login/allnotification.jsp" />
+	</definition>
+	
+	<definition name="allnotificationinside"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Dashboard/allnotificationinside.jsp" />
+	</definition>
+	
+	
+
+	<definition name="AddHomeworkMaterial"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Dashboard/AddHomeworkMaterial.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+	<definition name="AddMou" extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Dashboard/AddMou.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+	<definition name="sitemap"
+		extends="base.Layout_rootfiles.definition">
+		<put-attribute name="title" value="common" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/login/sitemap.jsp" />
+	</definition>
+	<definition name="calendar"
+		extends="base.Layout_rootfiles.definition">
+		<put-attribute name="title" value="common" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/login/calendar.jsp" />
+	</definition>
+	<definition name="FeedbackForm"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Dashboard/feedbackForm.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+
+	<!-- start of static report tiles -->
+
+	<definition name="DashboardReportsHomepage"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Dashboard/DashboardReportsHomepage.jsp" />
+		<put-attribute name="menuselection" value="home" />
+
+	</definition>
+
+	<definition name="SchoolCategoryReportDashboard"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Dashboard/SchoolCategoryReportDashboard.jsp" />
+		<put-attribute name="menuselection" value="home" />
+
+	</definition>
+
+	<definition name="schoolwisestaffvacancyreport"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Dashboard/schoolwisestaffvacancyreport.jsp" />
+		<put-attribute name="menuselection" value="home" />
+
+	</definition>
+	<definition name="classwisestudentvacancyreport"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Dashboard/classwisestudentvacancyreport.jsp" />
+		<put-attribute name="menuselection" value="home" />
+
+	</definition>
+
+
+	<definition name="categorywiseboysandgirlsreport"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Dashboard/categorywiseboysandgirlsreport.jsp" />
+		<put-attribute name="menuselection" value="home" />
+
+	</definition>
+
+	<definition name="schoolwisetypeofstaffreport"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Dashboard/schoolwisetypeofstaffreport.jsp" />
+		<put-attribute name="menuselection" value="home" />
+
+	</definition>
+
+
+
+	<definition name="schoolwiseincomeexpenditurereport"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Dashboard/schoolwiseincomeexpenditurereport.jsp" />
+		<put-attribute name="menuselection" value="home" />
+
+	</definition>
+	<definition name="Classwisereport"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Dashboard/Classwisereport.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+
+	<definition name="Schoolwiseteachers"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Dashboard/Schoolwiseteachers.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+
+	<definition name="Classwiseresult"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Dashboard/Classwiseresult.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+
+
+
+	<definition name="societyreporthomepage"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Dashboard/soci\etyreporthomepage.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+
+
+
+
+	<definition name="ROwisetypeofstaff"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Dashboard/ROwisetypeofstaff.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+
+
+
+
+	<definition name="ROwisefeesvsexpenditure"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Dashboard/ROwisefeesvsexpenditure.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+
+
+
+
+
+	<definition name="societywisefeesvsexpenditure"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Dashboard/ROwisefeesvsexpenditure.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+
+
+	<definition name="ROwiseboysandgirlsreport"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Dashboard/ROwiseboysandgirlsreport.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+	<definition name="ROwiseteachersReport"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Dashboard/ROwiseteachersReport.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+	<definition name="ROwiseresultReport"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Dashboard/ROwiseresultReport.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+	<definition name="SocietywiseStudent"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Dashboard/SocietywiseStudent.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+	<definition name="SocietywiseTeachers"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Dashboard/SocietywiseTeachers.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+	<definition name="SocietywiseResultReport"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Dashboard/SocietywiseResult.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+	<definition name="SocietyFeesandExpenditure"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Dashboard/Societywiseincomeexpenditurereport.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+
+
+	<definition name="ROdashboardreportshomepage"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Dashboard/ROdashboardreportshomepage.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+
+	<definition name="Award" extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Dashboard/award.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+
+
+	<definition name="screen_reader_access"
+		extends="base.Layout_rootfiles.definition">
+		<put-attribute name="title" value="common" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/login/screen_reader_access.jsp" />
+	</definition>
+
+	<definition name="terms_conditions"
+		extends="base.Layout_rootfiles.definition">
+		<put-attribute name="title" value="common" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/login/terms_conditions.jsp" />
+	</definition>
+
+	<definition name="help"
+		extends="base.Layout_rootfiles.definition">
+		<put-attribute name="title" value="common" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/login/help.jsp" />
+	</definition>
+
+	<definition name="websitepolicy"
+		extends="base.Layout_rootfiles.definition">
+		<put-attribute name="title" value="common" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/login/websitepolicy.jsp" />
+	</definition>
+
+	<!-- Richtextbox -->
+	<definition name="DemoRichView"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Dashboard/DemoRich.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+
+	<definition name="Ejournal" extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Dashboard/Ejournal.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+
+	<definition name="DashboardFFC"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Dashboard/DashboardOfsixFFL.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+
+	<definition name="CAT_dashboard"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Dashboard/CAT_dashboard.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+
+	<definition name="E_Journals_MCTE"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Dashboard/E_Journals_MCTE.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+	<definition name="signup"
+		extends="base.Layout_rootfiles.definition">
+		<put-attribute name="title" value="common" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/login/signup.jsp" />
+	</definition>
+
+
+	<!-- end of static report -->
+	<!-- rbac start -->
+
+
+	<definition name="screen_mstTiles"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/RBAC/screen_mst.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+	<definition name="ModuleMaster"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/RBAC/ModuleMaster.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+	<definition name="SubModuleMaster"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/RBAC/SubModuleMaster.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+	<definition name="RoleMaster"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/RBAC/RoleMaster.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+	<!-- rbac end -->
+
+	<!-- FFL Master Start -->
+
+	<definition name="view_registration"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Dashboard/FFL/view_registration.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+	
+	<definition name="bulletin"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Dashboard/FFL/bulletin.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+	
+	<definition name="bulletin_approval"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Dashboard/FFL/bulletin_approval.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+	
+	<definition name="user_ejournal"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Dashboard/FFL/user_ejournal.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+
+	<definition name="Ejournalapproval"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Dashboard/FFL/EjournalApproval.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+
+	<definition name="addhallOfFame"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Dashboard/FFL/hall_of_fame.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+
+
+	<definition name="add_picture_gallary"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Dashboard/FFL/picture_gallary.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+
+	<definition name="newsLetter"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Dashboard/FFL/newsLetter.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+
+	<definition name="newsLetterApproval"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Dashboard/FFL/newsLetterApproval.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+
+	<definition name="addactivity"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Dashboard/FFL/activity.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+
+	<definition name="Halloffameapproval"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Dashboard/FFL/HallofFameApproval.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+
+	<definition name="activityapproval"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Dashboard/FFL/activityApproval.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+
+	<definition name="picture_gallary_approval"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Dashboard/FFL/picture_gallary_approval.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+
+	<definition name="whats_new_scroll"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Dashboard/FFL/whats_new_scroll.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+
+	<definition name="whatsNewScrollApproval"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Dashboard/FFL/whatsNewScrollApproval.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+
+	<definition name="addAlumniDetail"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Dashboard/FFL/alumni_details.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+
+	<definition name="alumniapproval"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Dashboard/FFL/alumniApproval.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+
+
+
+	<definition name="MCTE_dashboard"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Dashboard/MCTE_dashboard.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+
+
+
+	<definition name="adminDashboard"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Dashboard/adminDashboard.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+
+
+
+	<definition name="E_Journals_MCTE"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Dashboard/E_Journals_MCTE.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+	<definition name="signup"
+		extends="base.Layout_rootfiles.definition">
+		<put-attribute name="title" value="common" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/login/signup.jsp" />
+	</definition>
+	<definition name="E_Journal_dtlPage"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Dashboard/E_Journal_dtlPage.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+	<definition name="FFL_newsletter"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Dashboard/FFL_newsletter.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+	<definition name="HallOfFame"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Dashboard/HallOfFame.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+	<definition name="FFC_Alumni"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Dashboard/FFC_Alumni.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+	<definition name="Picture_gallery"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Dashboard/Picture_gallery.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+
+	<definition name="all_news" extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Dashboard/all_news.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+	<definition name="MISC_activities"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Dashboard/MISC_activities.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+
+
+	<!-- FFL Master End -->
+
+
+	<!-- error pages -->
+	<definition name="error1"
+		extends="base.Layout_rootfiles.definition">
+		<put-attribute name="title" value="common" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/error/error.jsp" />
+	</definition>
+
+	<definition name="loginError"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/error/loginError.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+
+	<definition name="toomanyrequest"
+		extends="base.Layout_rootfiles.definition">
+		<put-attribute name="title" value="common" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/error/toomanyrequest.jsp" />
+	</definition>
+	<definition name="toomanyrequestLogin"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/error/toomanyrequestLogin.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+
+
+	<definition name="myprofile" extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Dashboard/FFL/myprofile.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+
+
+	<definition name="instituteDashboard"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Dashboard/instituteDashboard.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+	
+	<definition name="EmbasyAdminApproval"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Dashboard/FFL/EmbasyAdminApproval.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+	
+	<definition name="EmbasyDashboard"
+		extends="base.admin.definition">
+		<put-attribute name="title" value="Admin Home" />
+		<put-attribute name="body"
+			value="/WEB-INF/pages/Dashboard/EmbasyDashboard.jsp" />
+		<put-attribute name="menuselection" value="home" />
+	</definition>
+	
+
+</tiles-definitions>
